@@ -1,9 +1,9 @@
 require('dotenv').config();
 const express = require('express');
-const { connectToDatabase } = require('./src/config/database');
-const uploadApi = require('./src/api/uploadApi');
-const statusApi = require('./src/api/statusApi');
-const { startWorker } = require('./src/workers/jobWorker');
+const { connectToDatabase } = require('./image processing system/src/config/database');
+const uploadApi = require('./image processing system/src/api/uploadApi');
+const statusApi = require('./image/processing system/src/api/statusApi');
+const { startWorker } = require('./image processing system/src/workers/jobWorker');
 
 const app = express();
 const PORT = process.env.PORT || 3000;

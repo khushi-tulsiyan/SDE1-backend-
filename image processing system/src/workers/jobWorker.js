@@ -1,8 +1,8 @@
-const queueManager = require('../utils/queueManager');
-const csvProcessor = require('../services/csvProcessor');
-const imageProcessor = require('../services/imageProcessor');
-const webhookService = require('../services/webHookService');
-const Job = require('../models/job');
+const queueManager = require('./image processing system/src/utils/queueManager');
+const csvProcessor = require('./image processing system/src/services/csvProcessor');
+const imageProcessor = require('./image processing system/src/services/imageProcessor');
+const webhookService = require('./image processing system/src/services/webHookService');
+const Job = require('./image processing system/src/models/job');
 
 async function processJob(jobId) {
   const job = await Job.findById(jobId);

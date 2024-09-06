@@ -1,5 +1,5 @@
 const express = require('express');
-const Job = require('../../models/job');
+const Job = require('./image processing system/src/models/job');
 
 const router = express.Router();
 
