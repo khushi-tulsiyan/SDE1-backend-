@@ -1,8 +1,8 @@
 const express = require('express');
 const multer = require('multer');
-const csvValidator = require('../utils/csvValidator');
-const Job = require('../models/job');
-const queueManager = require('../utils/queueManager');
+const csvValidator = require('../../utils/csvValidator');
+const Job = require('../../models/job');
+const queueManager = require('../../utils/queueManager');
 
 const router = express.Router();
 const upload = multer({ dest: 'uploads/' });
