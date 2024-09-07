@@ -1,8 +1,8 @@
 const express = require('express');
 const multer = require('multer');
-const csvValidator = require('./image processing system/src/utils/CsvValidator');
-const Job = require('./image processing system/src/models/job');
-const queueManager = require('./image processing system/srcutils/queueManager');
+const csvValidator = require('/Users/INDIA/SDE1-backend-/image processing system/src/utils/csvValidator')
+const Job = require('/Users/INDIA/SDE1-backend-/image processing system/src/models/job');
+const queueManager = require('/Users/INDIA/SDE1-backend-/image processing system/src/utils/queueManager');
 
 const router = express.Router();
 const upload = multer({ dest: 'uploads/' });

@@ -1,5 +1,5 @@
 const express = require('express');
-const Job = require('./image processing system/src/models/job');
+const Job = require('/Users/INDIA/SDE1-backend-/image processing system/src/models/job');
 
 const router = express.Router();
 
