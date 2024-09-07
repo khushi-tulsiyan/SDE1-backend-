@@ -1,9 +1,10 @@
+// server.js
+
 require('dotenv').config();
 const express = require('express');
 const { connectToDatabase } = require('./image processing system/src/config/database');
 const uploadApi = require('./image processing system/src/api/uploadApi');
-const statusApi = require('./image/processing system/src/api/statusApi');
-const { startWorker } = require('./image processing system/src/workers/jobWorker');
+const statusApi = require('./statusApi'); 
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -25,6 +26,3 @@ app.use('/processed', express.static('public/processed'));
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-// Start the worker
-startWorker().catch(console.error);
